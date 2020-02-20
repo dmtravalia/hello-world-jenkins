@@ -9,7 +9,7 @@ namespace HelloWorldJenkins
         [HttpGet]
         public ActionResult<string> Get()
         {
-            return "Hello world";
+            return "Hello world2";
         }
     }
 }
