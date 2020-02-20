@@ -16,4 +16,4 @@ RUN dotnet publish "HelloWorldJenkins.csproj" -c Release -o /app
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app .
-CMD ["./run.sh"]
+ENTRYPOINT ["dotnet", "HelloWorldJenkins.dll"]
